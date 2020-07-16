@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; text-align: center;">
+        <h1 style="text-align: center; color: red;">Numeros</h1>
+    <script>
+        var num1 = parseInt(prompt('Digite o primeiro numero'));
+        var num2 = parseInt(prompt('Digite o segundo numero'));
+        var num3 = parseInt(prompt('Digite o terceiro numero'));
+        var num4 = parseInt(prompt('Digite o quarto numero'));
+        var num5 = parseInt(prompt('Digite o quinto numero'));
+
+        if(isNaN(num1)){
+            num1 = 0;
+        }if(isNaN(num2)){
+            num2 = 0;
+        }if(isNaN(num3)){
+            num3 = 0;
+        }if(isNaN(num4)){
+            num4 = 0;
+        }if(isNaN(num5)){
+            num5 = 0;
+        }
+
+        document.write(`<h3 style= "color:white">Entre os numeros ${num1}, ${num2}, ${num3}, ${num4} e ${num5} o menor é ${Math.min(num1, num2, num3, num4, num5)} e o maior é ${Math.max(num1, num2, num3, num4, num5)}.<br>`)
+
+        if(num1 % 2 != 0){
+            document.write(`O ${num1} é Impar<br>`);
+        }else{
+            document.write(`O ${num1} é Par<br>`);
+        }
+        if(num2 % 2 != 0){
+            document.write(`O ${num2} é Impar<br>`);
+        }else{
+            document.write(`O ${num2} é Par<br>`);
+        }
+        if(num3 % 2 != 0){
+            document.write(`O ${num3} é Impar<br>`);
+        }else{
+            document.write(`O ${num3} é Par<br>`);
+        }
+        if(num4 % 2 != 0){
+            document.write(`O ${num4} é Impar<br>`);
+        }else{
+            document.write(`O ${num4} é Par<br>`);
+        }
+        if(num5 % 2 != 0){
+            document.write(`O ${num5} é Impar<br>`);
+        }else{
+            document.write(`O ${num5} é Par<br>`);
+        }
+        //Professor, desculpa mais eu não tô conseguindo colocar quantos numeros repetidos tem. Já tentei de todo jeito :{
+
+    </script>
+</body>
+</html>
